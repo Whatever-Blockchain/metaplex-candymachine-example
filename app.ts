@@ -96,10 +96,10 @@ async function main() {
     console.log(`- Number of Minted NFTs: ${candyMachine.itemsRedeemed.toString()}`);
 
     // 10. Mint
-    const nftMintKeypair = await mintNft(umi, publicKey(tempCandyMachinePubkey), publicKey(tempCollectionMintPubkey));
-    if (nftMintKeypair != null) {
-      console.log(`nftMint Pubkey: ${new web3Pubkey(nftMintKeypair.publicKey.bytes).toString()}`);
-    }
+    // const nftMintKeypair = await mintNft(umi, publicKey(tempCandyMachinePubkey), publicKey(tempCollectionMintPubkey));
+    // if (nftMintKeypair != null) {
+    //   console.log(`nftMint Pubkey: ${new web3Pubkey(nftMintKeypair.publicKey.bytes).toString()}`);
+    // }
 
   }
 }
